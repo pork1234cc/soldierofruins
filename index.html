@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Soldier of Ruins: Temple of Apocalypse - An epic action-adventure game where you battle through ancient ruins and face apocalyptic challenges.">
+    <link rel="canonical" href="https://soldierofruins.online" />
+    <title>Soldier of Ruins: Temple of Apocalypse | Play Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        .game-screenshot {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .game-screenshot:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-['Inter']">
+    <!-- Fixed Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="text-3xl font-bold text-white">
+                    Soldier of Ruins: Temple of Apocalypse
+                </h1>
+                <p class="text-lg text-blue-100 mt-1">
+                    Embark on an epic journey through ancient ruins and face the challenges of the apocalypse
+                </p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content with top padding to account for fixed nav -->
+    <main class="max-w-7xl mx-auto px-4 py-8 pt-32">
+        <!-- Game Container -->
+        <div class="w-full max-w-6xl mx-auto bg-white rounded-xl shadow-lg p-4 mb-8">
+            <div class="aspect-w-16 aspect-h-9 relative">
+                <iframe 
+                    id="game_drop"
+                    class="w-full h-[700px] rounded-lg"
+                    allowtransparency="true"
+                    webkitallowfullscreen="true"
+                    mozallowfullscreen="true"
+                    msallowfullscreen="true"
+                    frameborder="0"
+                    allowfullscreen="true"
+                    scrolling="no"
+                    allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
+                    src="https://html-classic.itch.zone/html/13108166/index.html">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Screenshots Carousel -->
+        <div class="w-full max-w-6xl mx-auto bg-white rounded-xl shadow-lg p-4 mb-8">
+            <h2 class="text-2xl font-bold text-orange-500 mb-4">Game Screenshots</h2>
+            <div class="swiper gameScreenshots">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/1.jpg" alt="Soldier exploring ancient ruins" class="game-screenshot">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/2.jpg" alt="Combat with mythical creatures" class="game-screenshot">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/3.jpg" alt="Temple puzzle solving" class="game-screenshot">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/4.jpg" alt="Epic boss battle" class="game-screenshot">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/5.jpg" alt="Ancient temple environment" class="game-screenshot">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/6.jpg" alt="Character customization" class="game-screenshot">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <!-- Game Details -->
+        <section class="w-full max-w-6xl mx-auto bg-white rounded-xl shadow-lg p-8 space-y-8">
+            <div>
+                <h2 class="text-2xl font-bold text-orange-500 mb-4 border-b pb-2 border-orange-200">About the Game</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Soldier of Ruins: Temple of Apocalypse is an action-packed adventure that puts you in the boots of a brave warrior exploring mysterious ancient ruins. Navigate through treacherous temples, solve intricate puzzles, and battle formidable foes in your quest for survival.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-orange-500 mb-4 border-b pb-2 border-orange-200">Key Features</h2>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Immersive action-adventure gameplay</li>
+                    <li>Beautiful, atmospheric environments</li>
+                    <li>Challenging combat system</li>
+                    <li>Engaging storyline and character progression</li>
+                    <li>Regular updates and new content</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-orange-500 mb-4 border-b pb-2 border-orange-200">How to Play</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Jump right into the action using your keyboard and mouse. The game features intuitive controls and a helpful tutorial to get you started. Experience the thrill of exploration and combat as you uncover the mysteries of the Temple of Apocalypse.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 mt-12 py-6">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-600">
+            <p>&copy; 2024 Soldier of Ruins. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add Lightbox container after footer -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <img src="" alt="Enlarged screenshot" id="lightbox-img">
+    </div>
+
+    <!-- Update Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.gameScreenshots', {
+            slidesPerView: 4,
+            spaceBetween: 16,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // Responsive breakpoints
+            breakpoints: {
+                // 当窗口宽度小于 640px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // 当窗口宽度大于等于 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 12
+                },
+                // 当窗口宽度大于等于 768px
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 14
+                },
+                // 当窗口宽度大于等于 1024px
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 16
+                }
+            }
+        });
+
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        
+        // Add click event to all screenshots
+        document.querySelectorAll('.game-screenshot').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+        });
+
+        // Close lightbox function
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html> 
